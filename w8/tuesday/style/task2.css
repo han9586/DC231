@@ -9,11 +9,11 @@ body {
   background: linear-gradient(
     to bottom,
     #ffffff,
-    blue
+    yellow
   ); /* 그라데이션 설정 */
   /* 그 외 스타일 설정 */
   width: 100%;
-  height: 145vh; /* 그라데이션의 전체 높이 조정 */
+  height: 200vh; /* 그라데이션의 전체 높이 조정 */
 }
 
 .section {
@@ -138,10 +138,28 @@ body {
   margin-inline: auto;
 }
 #hero1 .main__text {
+  font-family: "Playfair Display", serif;
   max-width: 600px;
   margin-inline: auto;
   margin-bottom: 24px;
 }
+
+#hero1 .main__text2 {
+  font-family: "Lato", sans-serif;
+
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 24px;
+}
+
+#hero2 .main__text3 {
+  font-family: "Lato", sans-serif;
+  color: white;
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 24px;
+}
+
 #hero1 .main__media {
   background-image: url("이미지주소");
   background-size: cover; /* 이미지를 화면에 꽉 차게 표시 */
