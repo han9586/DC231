@@ -1,0 +1,260 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    blue
+  ); /* 그라데이션 설정 */
+  /* 그 외 스타일 설정 */
+  width: 100%;
+  height: 142vh; /* 그라데이션의 전체 높이 조정 */
+}
+
+.section {
+  /* background-color: red; */
+}
+
+.container {
+  /*--pXVal: 36px;
+    /* background-color: green; */
+  max-width: 1328px;
+  margin-inline: auto;
+  padding-inline: 64px;
+}
+
+.wrapper {
+  /* background-color: blue; */
+  padding-block: 64px;
+}
+
+.button {
+  font-family: "Noto Sans", sans-serif;
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: blue;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: white;
+  font-weight: 900;
+  text-align: center;
+}
+.button a {
+  color: #fff;
+  text-decoration: none;
+}
+.button--type-text {
+  background-color: unset;
+  padding-inline: 0;
+}
+.button--type-text a {
+  color: #2b00ff;
+  text-decoration: none;
+}
+
+.main__media {
+  overflow: hidden;
+}
+.main__media img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.navbar {
+  position: relative;
+  height: 50px;
+  background-color: #333;
+}
+
+.hamburger {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+}
+.logo {
+  font-family: "Lato", sans-serif;
+}
+
+.nav {
+  background-color: rgb(25, 0, 255);
+  color: white;
+  font-weight: 700;
+  font-family: "Noto Sans", sans-serif;
+  container-type: inline-size;
+  container-name: nav;
+}
+
+.nav .tittle {
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+}
+
+.nav .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-block: 12px;
+}
+.nav__menuWrapper {
+  display: flex;
+  gap: 24px;
+  align-items: baseline;
+}
+.nav .lt680px {
+  display: none;
+}
+@container nav (width < 42.5rem) {
+  .nav__menuWrapper {
+    display: none;
+  }
+  .nav .lt680px {
+    display: unset;
+  }
+}
+
+#hero1 {
+  text-align: center;
+}
+#hero1 .button {
+  margin-inline: auto;
+}
+#hero1 .main__text {
+  max-width: 600px;
+  margin-inline: auto;
+  margin-bottom: 24px;
+}
+#hero1 .main__media {
+  background-image: url("이미지주소");
+  background-size: cover; /* 이미지를 화면에 꽉 차게 표시 */
+  background-position: center center; /* 이미지를 가운데로 정렬 */
+  width: 100%;
+  height: 100vh;
+}
+#hero1 .main__media .swiper-container {
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  white-space: nowrap;
+}
+#hero1 .main__media .swiper-slide {
+  display: inline-block;
+  width: 100%;
+  scroll-snap-align: center;
+}
+#hero1 h2 {
+  margin-bottom: 16px;
+}
+#hero1 p {
+  margin-bottom: 24px;
+}
+
+#hero2 {
+  background-color: blue;
+}
+#hero2 .wrapper {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+#hero2 .wrapper > * {
+  flex: 1;
+}
+#hero2 .main__text__buttonWrapper {
+  display: flex;
+  gap: 16px;
+}
+#hero2 .main__media {
+  aspect-ratio: 4/3;
+}
+#hero2 h2 {
+  margin-bottom: 16px;
+}
+#hero2 p {
+  max-width: 40ch;
+  margin-bottom: 24px;
+}
+@media (width < 850px) {
+  #hero2 .wrapper {
+    display: block;
+    text-align: center;
+  }
+  #hero2 .wrapper p {
+    margin-inline: auto;
+  }
+  #hero2 .main__text {
+    color: white;
+    margin-bottom: 36px;
+  }
+  #hero2 .main__text__buttonWrapper {
+    margin-inline: auto;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+}
+
+.footer {
+  background-color: rgb(255, 255, 255);
+  color: blue;
+  font-size: 0.875rem;
+  container-type: inline-size;
+  container-name: footer;
+}
+.footer a {
+  text-decoration: none;
+  color: rgb(89, 153, 255);
+}
+.footer li {
+  list-style: none;
+}
+.footer svg {
+  fill: rgb(255, 106, 163);
+}
+.footer .wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+.footer h2 {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 4px;
+}
+.footer li {
+  margin-bottom: 0.5rem;
+}
+.footer__logo {
+  margin-bottom: 12px;
+}
+.footer__extlinkwrap {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+@container footer (width < 44.375rem) {
+  .footer .column:first-of-type {
+    grid-row: 1 / span 2;
+  }
+  .footer .wrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+} /*# sourceMappingURL=task2.css.map */
