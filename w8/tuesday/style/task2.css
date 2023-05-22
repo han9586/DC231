@@ -6,11 +6,7 @@
 }
 
 body {
-  background: linear-gradient(
-    to bottom,
-    #ffffff,
-    rgb(255, 251, 0)
-  );
+  background: linear-gradient(to bottom, #ffffff, yellow);
   width: 100%;
   height: 200vh;
 }
@@ -25,8 +21,17 @@ body {
   padding-block: 64px;
 }
 
+.button a {
+  color: #fff;
+  text-decoration: none;
+}
+.button--type-text a {
+  color: #2b00ff;
+  text-decoration: none;
+}
+
 .button {
-  font-family: "Lato", sans-serif;
+  font-family: "Noto Sans", sans-serif;
   width: -moz-fit-content;
   width: fit-content;
   background-color: blue;
@@ -36,17 +41,9 @@ body {
   font-weight: 900;
   text-align: center;
 }
-.button a {
-  color: #fff;
-  text-decoration: none;
-}
 .button--type-text {
   background-color: unset;
   padding-inline: 0;
-}
-.button--type-text a {
-  color: #2b00ff;
-  text-decoration: none;
 }
 
 .main__media {
@@ -56,7 +53,7 @@ body {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 
 .navbar {
@@ -82,6 +79,7 @@ body {
   height: 2px;
   background-color: #fff;
 }
+
 .logo {
   font-family: "Lato", sans-serif;
 }
@@ -94,12 +92,6 @@ body {
   container-type: inline-size;
   container-name: nav;
 }
-
-.nav .tittle {
-  font-family: "Lato", sans-serif;
-  font-size: 30px;
-}
-
 .nav .wrapper {
   display: flex;
   justify-content: space-between;
@@ -135,23 +127,6 @@ body {
   margin-inline: auto;
   margin-bottom: 24px;
 }
-
-#hero1 .main__text2 {
-  font-family: "Lato", sans-serif;
-
-  max-width: 600px;
-  margin-inline: auto;
-  margin-bottom: 24px;
-}
-
-#hero2 .main__text3 {
-  font-family: "Lato", sans-serif;
-  color: white;
-  max-width: 600px;
-  margin-inline: auto;
-  margin-bottom: 24px;
-}
-
 #hero1 .main__media {
   background-image: url("이미지주소");
   background-size: cover;
@@ -187,7 +162,14 @@ body {
 #hero2 .wrapper > * {
   flex: 1;
 }
-#hero2 .main__text__buttonWrapper {
+#hero2 .main {
+  color: white;
+  margin-bottom: 36px;
+}
+#hero2 .main__text2 {
+  color: white;
+}
+#hero2 .main__text2__buttonWrapper {
   display: flex;
   gap: 16px;
 }
@@ -209,56 +191,62 @@ body {
   #hero2 .wrapper p {
     margin-inline: auto;
   }
+  #hero2 .main {
+    font-family: "Playfair Display", serif;
+  }
   #hero2 .main__text {
     color: white;
     margin-bottom: 36px;
   }
-  #hero2 .text-container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
+  #hero2 .main__text__buttonWrapper {
+    margin-inline: auto;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    gap: 0;
   }
-
-  .text-wrapper {
-    display: inline-block;
-    white-space: nowrap;
-    overflow: hidden;
+}
+#hero2 .text-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#hero2 .text-wrapper {
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#hero2 .animated-text {
+  font-family: "Sigmar", cursive;
+  font-size: 36px;
+  animation: slide-in 5s linear infinite;
+}
+@keyframes slide-in {
+  0% {
+    transform: translateX(100%);
   }
-
-  .animated-text {
-    font-family: "Sigmar", cursive;
-    font-size: 36px;
-    animation: slide-in 5s linear infinite;
-  }
-
-  @keyframes slide-in {
-    0% {
-      transform: translateX(100%);
-    }
-    100% {
-      transform: translateX(-100%);
-    }
+  100% {
+    transform: translateX(-100%);
   }
 }
 
 .footer {
-  background-color: rgb(255, 255, 255);
-  color: blue;
+  background-color: rgb(255, 253, 217);
+  color: white;
   font-size: 0.875rem;
   container-type: inline-size;
   container-name: footer;
 }
 .footer a {
   text-decoration: none;
-  color: rgb(89, 153, 255);
+  color: white;
 }
 .footer li {
   list-style: none;
 }
 .footer svg {
-  fill: rgb(255, 106, 163);
+  fill: white;
 }
 .footer .wrapper {
   display: grid;
@@ -284,9 +272,9 @@ body {
 }
 @container footer (width < 44.375rem) {
   .footer .column:first-of-type {
-    grid-row: 1 / span 2;
+    grid-row: 1/span 2;
   }
   .footer .wrapper {
     grid-template-columns: 1fr 1fr 1fr;
   }
-}
+}/*# sourceMappingURL=task2.css.map */

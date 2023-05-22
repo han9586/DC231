@@ -48,10 +48,11 @@ body {
   color: white;
   font-weight: 900;
   text-align: center;
-}
-&--type-text {
-  background-color: unset;
-  padding-inline: 0;
+
+  &--type-text {
+    background-color: unset;
+    padding-inline: 0;
+  }
 }
 
 .main {
