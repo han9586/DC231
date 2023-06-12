@@ -1,0 +1,31 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+section:nth-child(even) {
+  background-color: grey;
+}
+
+.wrapper {
+  width: min(60ch, 100% - 4rem);
+  min-height: max(600px, 100dvh);
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  border: 1px solid red;
+}
